@@ -27,6 +27,6 @@ jobs:
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.DEPLOY_SECRET }}
         publish_dir: dist/happy-27
         enable_jekyll: true
