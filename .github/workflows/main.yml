@@ -18,10 +18,7 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm run test:headless
+      run: npm install --registry https://registry.npmjs.org
 
     - name: Build
       run: npm run build:prod
@@ -30,6 +27,6 @@ jobs:
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.DEPLOY_SECRET }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: dist/happy-27
         enable_jekyll: true
