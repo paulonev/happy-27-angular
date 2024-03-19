@@ -1,0 +1,9 @@
+.css-1pnkigu {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
+    font-size: calc(14px + 1*((100vw - 384px) / 384));
+    color: black;
+}
